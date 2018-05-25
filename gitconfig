@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[user]
+	email = 1146040444@qq.com
+	name = master-genius
+
+[credential]
+	helper = store
+

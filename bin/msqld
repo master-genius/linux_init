@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sudo -u mysql /usr/local/mariadb/bin/mysqld_safe --defaults-file=/usr/local/mariadb/etc/my.cnf --nowatch
+
+

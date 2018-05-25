@@ -1,0 +1,4 @@
+#!/bin/bash
+
+/webrun/mariadb/bin/mysql --socket=/webrun/mariadb/var/run/mysqld.sock -u master -pmaster2018
+
