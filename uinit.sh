@@ -50,9 +50,8 @@ echo "start to install software..."
 #install dev tool
 sudo apt install -y git vim tmux tilda guake
 
-if [ ! -f "$VIMRC" ] ; then
-    sudo cp vimrc $VIMRC_PATH
-fi
+#set vimrc
+sudo cp vimrc $VIMRC_PATH
 
 #install lib
 sudo apt install -y libreadline-dev libaio-dev redis-server
