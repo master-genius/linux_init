@@ -41,9 +41,10 @@ func SetTitle()
 	if &filetype == 'c'
 		call setline(1,"#include <stdio.h>")
 		call setline(2,"#include <stdlib.h>")
-		call setline(3,"int main(int argc, char *argv[]) {")
-		call setline(4,"\treturn 0;")
-		call setline(5,"}")
+		call setline(3,"")
+		call setline(4,"int main(int argc, char *argv[]) {")
+		call setline(5,"\treturn 0;")
+		call setline(6,"}")
 	endif
 endfunc
 
