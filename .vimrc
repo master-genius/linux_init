@@ -19,7 +19,7 @@ filetype on
 filetype plugin on
 filetype indent on
 
-autocmd BufNewFile *.c,*.php,*.sh,*.py exec ":call SetTitle()"
+autocmd BufNewFile *.c,*.php,*.sh,*.py,*.go exec ":call SetTitle()"
 func SetTitle()
 	if &filetype == 'python'
 		call setline(1, "#!/lnpp/py37/bin/python3")
@@ -45,6 +45,18 @@ func SetTitle()
 		call setline(4,"int main(int argc, char *argv[]) {")
 		call setline(5,"\treturn 0;")
 		call setline(6,"}")
+	endif
+	if &filetype == 'go'
+		call setline(1,"package main")
+		call setline(2,"")
+		call setline(3,"import (")
+		call setline(4,"    \"fmt\"")
+		call setline(5,")")
+		call setline(6,"")
+		call setline(7,"func main (){")
+        call setline(8,"")
+        call setline(9,"}")
+        call setline(10,"")
 	endif
 endfunc
 
