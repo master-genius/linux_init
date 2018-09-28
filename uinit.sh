@@ -9,6 +9,9 @@ SELF_DIR=$(dirname "$0")
 cd $SELF_DIR
 #cd $(dirname "$0")
 
+cp .bashrc ~/
+cp .profile ~/
+
 echo "setting vim..."
 
 if [ -d "$CVIMRC_PATH" ] ; then
