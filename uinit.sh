@@ -84,7 +84,7 @@ mv linux_c_small lcs
 #sync python code
 cd "$HOME/py"
 git clone "$GITHUB/python_small_program"
-mv "python_small_program/*" ./
-rmdir "python_small_program"
+mv python_small_program/* ./
+rmdir python_small_program
 
 

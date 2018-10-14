@@ -1,0 +1,10 @@
+#!/bin/bash
+
+comm="ps -e -o user,pid,ppid,comm,args,tty"
+
+if [ $# -gt 0 ] ; then
+    $comm | emre -i "USER.*PID.*|$1" | emre -v 'emre|ps -e -o' | emre -v "$0"
+else
+    $comm | emre -v 'emre|ps -e -o' | emre -v "$0"
+fi
+
